@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "9dab9932-6377-4a6b-9bb2-8f3d42973875",
+		"name": "AdminPortal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19186249"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sukriti\",\r\n    \"email\":\"suka4@main.com\",\r\n    \"phone\":1233456,\r\n    \"work\":\"engi\",\r\n    \"password\":\"sukriti\",\r\n    \"cpassword\":\"sukrtiti\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
